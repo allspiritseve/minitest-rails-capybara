@@ -7,7 +7,7 @@ require "minitest/metadata"
 module Capybara
   module Rails
     class TestCase < ::ActiveSupport::TestCase
-      include ::Rails.application.routes.url_helpers
+      # include ::Rails.application.routes.url_helpers
       include Capybara::DSL
       include Capybara::Assertions
       include MiniTest::Metadata
